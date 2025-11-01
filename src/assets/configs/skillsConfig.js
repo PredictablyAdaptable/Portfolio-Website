@@ -8,7 +8,7 @@ import {
   SiTableau,
   SiGoogleads,
   SiMeta,
-  SiPowerbi,
+  SiMicrosoftpowerpoint,
   SiMicrosoftazure,
   SiChartdotjs,
   SiLooker,
@@ -38,7 +38,7 @@ const skillsConfig = {
     { id: "skills-comp-airflow", className: "skill-icon", icon: <SiMeta size={ICON_SIZE} />, text: "Meta Ads Manager" },
     { id: "skills-comp-js", className: "skill-icon", icon: <SiGoogleads size={ICON_SIZE} />, text: "Google Ads" },
     { id: "skills-comp-css", className: "skill-icon", icon: <SiTableau size={ICON_SIZE} />, text: "Tableau" },
-    { id: "skills-comp-html", className: "skill-icon", icon: <SiPowerbi size={ICON_SIZE} />, text: "PowerBi" },
+    { id: "skills-comp-html", className: "skill-icon", icon: <SiMicrosoftpowerpoint size={ICON_SIZE} />, text: "PowerBi" },
     { id: "skills-comp-react", className: "skill-icon", icon: <SiLooker size={ICON_SIZE} />, text: "Looker" },
     { id: "skills-comp-kafka", className: "skill-icon", icon: <SiMicrosoftazure size={ICON_SIZE} />, text: "Azure" },
     { id: "skills-comp-powerbi", className: "skill-icon", icon: <SiChartdotjs size={ICON_SIZE} />, text: "Amplitude" }

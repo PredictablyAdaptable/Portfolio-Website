@@ -6,8 +6,8 @@ import { useLang } from '../../utils/i18n';
 
 const UI = {
   en: {
-    main: 'Main Skills & Tools',
-    complementary: 'Complementary Skills & Tools',
+    main: 'Main Stack & Tools',
+    complementary: 'Complementary Stack & Tools',
   },
   kr: {
     main: '주요 기술 및 스택',
