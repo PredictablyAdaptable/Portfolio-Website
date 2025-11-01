@@ -8,7 +8,7 @@ import {
   SiTableau,
   SiGoogleads,
   SiMeta,
-  SiMicrosoftazure,
+  SiMicrosoft,
   SiChartdotjs,
   SiLooker,
   SiDbt
@@ -40,7 +40,7 @@ const skillsConfig = {
     { id: "skills-comp-css", className: "skill-icon", icon: <SiTableau size={ICON_SIZE} />, text: "Tableau" },
     { id: "skills-comp-html", className: "skill-icon", icon: <BiBarChartAlt2 size={ICON_SIZE} />, text: "PowerBi" },
     { id: "skills-comp-react", className: "skill-icon", icon: <SiLooker size={ICON_SIZE} />, text: "Looker" },
-    { id: "skills-comp-kafka", className: "skill-icon", icon: <SiMicrosoftazure size={ICON_SIZE} />, text: "Azure" },
+    { id: "skills-comp-kafka", className: "skill-icon", icon: <SiMicrosoft size={ICON_SIZE} />, text: "Azure" },
     { id: "skills-comp-powerbi", className: "skill-icon", icon: <SiChartdotjs size={ICON_SIZE} />, text: "Amplitude" }
   ]
 };
