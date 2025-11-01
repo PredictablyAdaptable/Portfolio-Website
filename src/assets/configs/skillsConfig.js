@@ -8,7 +8,6 @@ import {
   SiTableau,
   SiGoogleads,
   SiMeta,
-  SiMicrosoft,
   SiChartdotjs,
   SiLooker,
   SiDbt
@@ -17,6 +16,7 @@ import { GrMysql } from "react-icons/gr";
 import { FaGitAlt } from "react-icons/fa";
 import { BiBarChartAlt2 } from "react-icons/bi";
 import React from "react";
+import { FaCloud } from "react-icons/fa";
 import StorageIcon from "@mui/icons-material/Storage";
 
 const ICON_SIZE = 50;
@@ -40,7 +40,7 @@ const skillsConfig = {
     { id: "skills-comp-css", className: "skill-icon", icon: <SiTableau size={ICON_SIZE} />, text: "Tableau" },
     { id: "skills-comp-html", className: "skill-icon", icon: <BiBarChartAlt2 size={ICON_SIZE} />, text: "PowerBi" },
     { id: "skills-comp-react", className: "skill-icon", icon: <SiLooker size={ICON_SIZE} />, text: "Looker" },
-    { id: "skills-comp-kafka", className: "skill-icon", icon: <SiMicrosoft size={ICON_SIZE} />, text: "Azure" },
+    { id: "skills-comp-kafka", className: "skill-icon", icon: <FaCloud size={ICON_SIZE} />, text: "Azure" },
     { id: "skills-comp-powerbi", className: "skill-icon", icon: <SiChartdotjs size={ICON_SIZE} />, text: "Amplitude" }
   ]
 };
