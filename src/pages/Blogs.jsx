@@ -37,7 +37,7 @@ const UI = {
     sortAZ: 'Title (A → Z)',
     ctaRead: 'Read',
     featured: 'Featured',
-    stripQ: 'Looking to ship ML to production?',
+    stripQ: 'Looking to accelerate growth with data?',
     stripSee: 'See projects',
     stripTalk: "Let's talk",
     new: 'New',

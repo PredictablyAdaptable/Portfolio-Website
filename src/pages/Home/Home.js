@@ -73,7 +73,7 @@ export default function Home() {
         <Typography component="h2" variant="h4" sx={{ fontWeight: 800, mb: 3 }}>
           {ExperienceLabel}
         </Typography>
-        <Box sx={{ width: '100%', maxWidth: '960px' }}>
+        <Box sx={{ width: '100%', maxWidth: '960px', mx: 'auto' }}>
           <Timeline items={timelineItems} />
         </Box>
       </Container>
