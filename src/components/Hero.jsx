@@ -5,6 +5,7 @@ import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import SecurityIcon from '@mui/icons-material/Security';
 import { useLang } from '../utils/i18n';
 import { withUtm } from '../utils/withUtm';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
 
 const UI = {
   en: {
@@ -42,10 +43,7 @@ const UI = {
 export default function Hero() {
   const [lang] = useLang();
   const t = UI[lang] || UI.en;
-  const EMAIL = process.env.EMAIL || '';
-  const mailHref = EMAIL
-    ? withUtm(`mailto:${EMAIL}?subject=${encodeURIComponent(t.subject)}`, 'hero_cta')
-    : '#';
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -108,10 +106,23 @@ export default function Hero() {
 
           {/* CTAs */}
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-            <Button href={mailHref} variant="contained" color="secondary" size="large" aria-label={t.ctaPrimary}>
+            <Button
+              onClick={() => navigate('/contact')}
+              variant="contained"
+              color="secondary"
+              size="large"
+              aria-label={t.ctaPrimary}
+            >  
+              
               {t.ctaPrimary}
             </Button>
-            <Button component="a" href="/projects" variant="outlined" size="large" sx={{ color: '#fff', borderColor: 'rgba(255,255,255,.5)' }}>
+            <Button
+              component={RouterLink}
+              to="/projects"
+              variant="outlined"
+              size="large"
+              sx={{ color: '#fff', borderColor: 'rgba(255,255,255,.5)' }}
+            >
               {t.ctaSecondary}
             </Button>
           </Stack>
