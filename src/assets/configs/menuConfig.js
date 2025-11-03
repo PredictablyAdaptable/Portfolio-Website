@@ -36,6 +36,14 @@ const menuConfig = {
       icon: <AiFillCode size={35} />,
       className: "nav-text",
     },
+    {
+      id: "menu-4",
+      title: "Contact",
+      title_i18n: { en: "contact", kr: "연락" },
+      path: "/contact",
+      icon: <AiFillCode size={35} />,
+      className: "nav-text",
+    },
   ],
 };
 
