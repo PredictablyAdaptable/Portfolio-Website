@@ -24,6 +24,21 @@
     <meta itemprop="description"
           content="Web site for personal data science projects, created with React, made open source">
 
+    <script>
+      (function() {
+        const path = window.location.pathname;
+        const needsSlash = (
+          !path.endsWith('/') &&
+          path.startsWith('/Portfolio-Website/') &&
+          path.split('/').length > 3
+        );
+        if (needsSlash) {
+          const newUrl = path + '/' + window.location.search + window.location.hash;
+          window.location.replace(newUrl);
+        }
+      })();
+    </script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
