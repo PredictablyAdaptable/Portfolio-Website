@@ -16,7 +16,7 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects';
 import Blogs from './pages/Blogs';
 import Skills from './pages/Skills/Skills';
-
+import Contact from './pages/Contact/Contact';
 
 if (process.env.REACT_APP_TRACKING_ID) {
   ReactGA.initialize(process.env.REACT_APP_TRACKING_ID);
@@ -47,6 +47,7 @@ export default function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/skills" element={<Skills />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Box>
