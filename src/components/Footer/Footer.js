@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { Container, Box, Typography, Button, Stack } from '@mui/material';
 import FooterItems from './FooterItems';
 import { useLang } from '../../utils/i18n';
-import { withUtm } from '../../utils/withUtm';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
 
 const COPY = {
   en: {
@@ -24,15 +24,7 @@ const COPY = {
 export default function Footer() {
   const [lang] = useLang();
   const t = COPY[lang] || COPY.en;
-
-
-  const EMAIL = process.env.EMAIL || '';
-
-  const emailHref = useMemo(() => {
-    const subject = encodeURIComponent(t.subject);
-    if (!EMAIL) return '#';
-    return withUtm(`mailto:${EMAIL}?subject=${subject}`, 'footer_cta');
-  }, [EMAIL, t.subject]);
+  const navigate = useNavigate();
 
   return (
     <Box sx={{ bgcolor: 'primary.main', color: '#fff', mt: 6 }}>
@@ -45,7 +37,7 @@ export default function Footer() {
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center" sx={{ mb: 3 }}>
           <Button
-            href={emailHref}
+            onClick={() => navigate('/contact')}
             variant="contained"
             color="secondary"
             aria-label={t.cta}
@@ -53,7 +45,8 @@ export default function Footer() {
             {t.cta}
           </Button>
           <Button
-            href="/projects"
+            component={RouterLink}
+            to="/projects"
             variant="outlined"
             sx={{ color: '#fff', borderColor: 'rgba(255,255,255,.4)' }}
           >
