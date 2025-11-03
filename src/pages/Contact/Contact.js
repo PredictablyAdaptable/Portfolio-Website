@@ -5,7 +5,7 @@ import EmailIco from "@mui/icons-material/AlternateEmail";
 import LinkedInIco from "@mui/icons-material/LinkedIn";
 import GitHubIco from "@mui/icons-material/GitHub";
 import ArticleIco from "@mui/icons-material/Article";
-import Seo from "../components/Seo";
+import Seo from "../../components/Seo";
 
 export default function Contact() {
   const canonical = typeof window !== "undefined" ? window.location.href : undefined;
