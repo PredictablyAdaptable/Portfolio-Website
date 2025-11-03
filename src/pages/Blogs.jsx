@@ -24,6 +24,7 @@ import blogConfig from '../assets/configs/blogConfig';
 import Seo from '../components/Seo';
 import { withUtm } from '../utils/withUtm';
 import { useLang } from '../utils/i18n';
+import { useNavigate, Link as RouterLink } from 'react-router-dom';
 
 const UI = {
   en: {
@@ -300,7 +301,12 @@ export default function Blogs() {
             <Button size="small" variant="contained" color="secondary" href="/projects">
               {t.stripSee}
             </Button>
-            <Button size="small" variant="outlined" href={withUtm(EMAIL ? `mailto:${EMAIL}` : '#', 'blogs_inline_cta')}>
+            <Button
+              size="small"
+              variant="outlined"
+              component={RouterLink}
+              to="/contact"
+            >
               {t.stripTalk}
             </Button>
           </Stack>
