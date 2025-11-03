@@ -59,7 +59,7 @@ const homeConfig = {
     {
       id: "work-5",
       title: "Marketing Data Science Consultant",
-      title_i18n: { en: "Marketing Data Science Consultant", kr: "마케팅 데이터 컨설턴트" },
+      title_i18n: { en: "Marketing Data Science Consultant", kr: "마케팅 데이터 컨설팅" },
       company: "Realestate Solution",
       description_i18n: {
         en: "Optimize paid advertising through MMM & incrementality testing.",

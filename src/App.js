@@ -38,7 +38,7 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Router>
+        <Router basename="/Portfolio-Website">
           <AnalyticsTracker />
           <NavBar />
           <Box component="main" sx={{ flex: 1 }}>
